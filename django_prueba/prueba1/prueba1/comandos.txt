@@ -1,0 +1,16 @@
+-- Creacion del entorno virtual
+python -m venv <nombre_del_entorno> # ojo en que carpeta estan parados a la hora de crear el entorno
+
+-- Activar el entorno
+## Desde la carpeta donde estamos -> al archivo "activate"
+<nombre_del_entorno>\Scripts\activate
+
+-- Desactivar el entorno
+<nombre_del_entorno>\Scripts\deactivate
+
+## Una vez que el entorno esta activado:
+pip install django
+
+-- Creamos un nuevo proyecto # chequear la carpeta donde quiero crear el proyecto
+django-admin startproyect <nombre_del_proyecto>
+

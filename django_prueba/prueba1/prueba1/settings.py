@@ -15,6 +15,7 @@ from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+  #Path(__file__).resolve().parent.parent
 
 
 # Quick-start development settings - unsuitable for production
@@ -55,7 +56,7 @@ ROOT_URLCONF = 'prueba1.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': os.path.join(os.path.dirname(BASE_DIR),'templates'),
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -79,7 +80,7 @@ DATABASES = {
         "ENGINE": 'django.db.backends.mysql',
         "NAME": "escuela",
         "USER": "root",
-        "PASSWORD": "root",
+        "PASSWORD": "facil",
         "HOST": "127.0.0.1",
         "PORT": "3306",
     }
@@ -121,7 +122,7 @@ USE_TZ = True
 # https://docs.djangoproject.                                                   com/en/5.1/howto/static-files/
 
 STATIC_URL = 'static/'
-STATICFILES_DIRS=(os.path.join(os.path.dirname(BASE_DIR), 'static')),
+STATICFILES_DIRS= os.path.join(os.path.dirname(BASE_DIR), 'static'),
 
 MEDIA = '/media'
 MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR),'media')
