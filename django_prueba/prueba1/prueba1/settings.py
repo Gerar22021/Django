@@ -56,7 +56,7 @@ ROOT_URLCONF = 'prueba1.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': os.path.join(os.path.dirname(BASE_DIR),'templates'),
+        'DIRS': [os.path.join(os.path.dirname(BASE_DIR),'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -80,7 +80,7 @@ DATABASES = {
         "ENGINE": 'django.db.backends.mysql',
         "NAME": "escuela",
         "USER": "root",
-        "PASSWORD": "facil",
+        "PASSWORD": "root",
         "HOST": "127.0.0.1",
         "PORT": "3306",
     }
