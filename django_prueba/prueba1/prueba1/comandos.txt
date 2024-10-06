@@ -14,3 +14,6 @@ pip install django
 -- Creamos un nuevo proyecto # chequear la carpeta donde quiero crear el proyecto
 django-admin startproyect <nombre_del_proyecto>
 
+-- Configuramos distintas opciones en el setting:
+    --DATABASES
+    --
